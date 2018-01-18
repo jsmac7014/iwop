@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+}
+body,html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.bold{
+  font-weight: 400;
+}
+.bg-container{
+  height: 100vh;
+  width: 100%;
+  background-image: url('./img/iwop-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.darken{
+  position: relative;
+
+}
+.darken:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(5,155,255,0.55);
+}
+
+.intro > .title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title{
+  color: white;
+  text-align: center;
+}
+.title h1{
+  margin: 0;
+  font-size: 3.5em;
+}
+.title > h2{
+  margin: 0;
+}
+.title h1{
+  margin: 0;
+  font-size: 3.5em;
+}
+.icons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 10px;
+  transition: background-color 0.3s;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(207,207,207,1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(207,207,207,1);
+  box-shadow: 0px 0px 3px 0px rgba(207,207,207,1);
+
+}
+.circle:hover{
+  border-color:#36afff;
+  background-color:#36afff;
+}
+
+.circle a{
+  color: white;
+  width: 24px;
+  height: 24px;
+  cursor: default;
+}
+
+.lesson-container{
+  width: 100%;
+
+}
+.lesson-container > .title{
+  height: 120px;
+  background-color:#0289e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lesson-container > .title h3{
+  margin: 0;
+  font-size: 2.5em;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  top: 50px;
+}
+
+.card{
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card svg{
+  color:#36afff;
+  width: 72px;
+  height: 72px;
+}
+
+@media screen and (max-width:768px) {
+  .cards{
+    flex-direction: column;
+  }
+  .card{
+    width: 80%;
+    margin: 0px;
+  }
+}
