@@ -212,5 +212,7 @@ a{
     height: 230px;
     margin: 0px;
   }
-
+.intro > .title{
+  top: 40%;
+}
 }
