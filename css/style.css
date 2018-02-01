@@ -210,6 +210,9 @@ a{
     margin: 0px;
   }
   .intro > .title{
-    top: 40%;
+
+  }
+  .bg-container{
+    height: 70vh;
   }
 }
