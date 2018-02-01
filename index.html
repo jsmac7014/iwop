@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/aos.css">
+  <script src="./js/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.5.0/feather.js"></script>
   <title>IWOP</title>
 </head>
@@ -12,11 +14,19 @@
   <div class="bg-container darken">
     <div class="intro">
       <div class="title">
-        <h1>IWOP</h1>
-        <h2>소프트웨어과 <span class="bold">유일 웹</span> 개발 <span class="bold">전문동아리</span></h2>
+        <h1 data-aos="zoom-in" data-aos-duration="750" id="title-1">IWOP</h1>
+        <h4 id="title-4">Internet World <br class="link-break">Operation People</h4>
+        <h2 data-aos="zoom-in-up">
+          <span>소프트웨어과 </span>
+          <span class="bold">유일</span>
+          <br class="link-break">
+          <span class="bold">웹 개발</span>
+          <span class="bold">전문동아리</span>
+        </h2>
+
         <div class="icons">
           <div class="circle">
-            <a href="">
+            <a href="https://www.facebook.com/sunrinIwop/">
               <i data-feather="facebook"></i>
             </a>
           </div>
@@ -39,23 +49,41 @@
       <h3>커리큘럼</h3>
     </div>
     <div class="cards">
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <i data-feather="code"></i>
         <p>처음 IWOP에 들어오면 HTML5와 CSS3와 같은 웹사이트의 보여지는 부분을 만드는 방법을 배우게 됩니다.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <i data-feather="terminal"></i>
         <p>HTML과 CSS를 배우고나서 기능적인 부분을 넣기 위해서 Node.js를 이용한 서버를 만드는 방법을 배우게 됩니다.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <i data-feather="database"></i>
         <p>로그인, 회원가입과 같이 정보를 저장하고 이용하는 서비스를 만들기위해 MariaDB와 Node.js를 배우게 됩니다.</p>
       </div>
     </div>
   </div>
-
+  <div class="list-container">
+    <div class="cards">
+      <div class="card">
+        <p>Hello</p>
+      </div>
+      <div class="card">
+        <p>Hello</p>
+      </div>
+      <div class="card">
+        <p>Hello</p>
+      </div>
+    </div>
+  </div>
   </div>
   <script>
+    AOS.init({
+      offset: 200,
+      duration: 750,
+      easing: 'ease-in-sine',
+      delay: 150,
+    });
     feather.replace()
   </script>
 </body>

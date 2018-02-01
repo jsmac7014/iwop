@@ -4,13 +4,33 @@
          url('./font/nanumsquarelight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+  font-family: 'COCOGOOSE';
+    src:  url('COCOGOOSE.ttf.woff') format('woff'),
+    url('COCOGOOSE.ttf.svg#COCOGOOSE') format('svg'),
+    url('COCOGOOSE.ttf.eot'),
+    url('COCOGOOSE.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 *{
   font-family: 'nanumsquarelight';
   font-weight: lighter;
 }
+#title-1{
+  font-size: 4.25em;
+  line-break: loose;
+}
 
+#title-4{
+  margin-top: 0px;
+}
+h1,h3,h4 {
+  font-family: 'COCOGOOSE';
+  font-weight: bold;
+  margin: 5px;
+}
 body,html{
   height: 100%;
   width: 100%;
@@ -20,6 +40,10 @@ body,html{
 a{
   text-decoration: none;
 }
+.h2{
+  font-size: 1.5em;
+}
+
 .bold{
   font-weight: 400;
 }
@@ -65,7 +89,7 @@ a{
 }
 .title h1{
   margin: 0;
-  font-size: 3.5em;
+  font-size: 4.25em;
 }
 .title > h2{
   margin: 0;
@@ -131,11 +155,13 @@ a{
   justify-content: center;
   flex-direction: row;
   position: relative;
+  flex-wrap: wrap;
+
   top: 50px;
 }
 
-.card{
-  margin: 10px;
+ .card{
+  margin: 15px;
   width: 300px;
   height: 300px;
   color: black;
@@ -146,18 +172,45 @@ a{
   text-align: center;
 }
 
-.card svg{
+.lesson-container .card svg{
   color:#36afff;
   width: 72px;
   height: 72px;
 }
+.list-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.list-container .cards{
+  margin: 15px;
+}
+.list-container .card{
+  width: 350px;
+  height: 450px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(214,214,214,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(214,214,214,1);
+  box-shadow: 0px 0px 5px 0px rgba(214,214,214,1);
+}
 
+@media screen and (min-width: 768px){
+  h2 > br{
+    display: none;
+  }
+  h4 > br{
+    display: none;
+  }
+}
 @media screen and (max-width:768px) {
   .cards{
     flex-direction: column;
   }
   .card{
-    width: 80%;
+    width: 75%;
+    height: 230px;
     margin: 0px;
   }
+
 }
