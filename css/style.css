@@ -126,6 +126,7 @@ a{
 
 .about-container{
   width: 100%;
+  margin-bottom: 30px;
 }
 .about-container .content{
   position: relative;
@@ -140,7 +141,7 @@ a{
    color: #36afff;
  }
 .about-container .content p{
-  margin:3px;
+  margin:5px;
 }
 .about-container .title h1{
   position: relative;
@@ -246,6 +247,10 @@ a{
   }
   h4 > br{
     display: none;
+  }
+  p > br{
+    display: none;
+
   }
 }
 @media screen and (max-width:768px) {
