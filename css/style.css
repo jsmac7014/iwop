@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'nanumsquarelight','Arial';
+    font-family: 'nanumsquarelight';
     src: url('./font/nanumsquarelight-webfont.woff2') format('woff2'),
          url('./font/nanumsquarelight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 *{
-  font-family: 'nanumsquarelight';
+  font-family: 'nanumsquarelight','Arial',sans-serif;
   font-weight: lighter;
 }
 
