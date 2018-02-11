@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'nanumsquarelight';
+    font-family: 'nanumsquarelight', sans-serif;
     src: url('./font/nanumsquarelight-webfont.woff2') format('woff2'),
          url('./font/nanumsquarelight-webfont.woff') format('woff');
     font-weight: normal;
