@@ -14,8 +14,8 @@
 }
 
 #title-1{
-  font-size: 4.25em;
-  line-break: loose;
+  font-size: 4.5em;
+  font-weight: 900;
 }
 
 #title-4{
@@ -37,7 +37,7 @@ a{
 
 
 .bg-container{
-  height: 100vh;
+  height:100%;
   width: 100%;
   background-image: url('../img/iwop-bg.jpg');
   background-attachment: fixed;
