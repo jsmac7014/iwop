@@ -40,7 +40,7 @@ a{
   height:100%;
   width: 100%;
   background-image: url('../img/iwop-bg.jpg');
-  background-attachment:scroll;
+  background-attachment:fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,4 +277,13 @@ a{
   .text.card{
     width:300px;
   }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .bg-container{
+    background-attachment:scroll;
+  }
+
 }
